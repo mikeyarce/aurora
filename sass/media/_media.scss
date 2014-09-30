@@ -1,0 +1,114 @@
+.page-content img.wp-smiley,
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Image Hovers */
+.entry-thumbnail {
+    line-height: 0;
+    margin-bottom: 40px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+.entry-thumbnail a:before {
+    background: none repeat scroll 0 0 padding-box content-box #B32938;
+    content: "";
+    display: block;
+    height: 100%;
+    opacity: 0;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    transition: all 250ms ease 0s;
+    width: 100%;
+    z-index: 1;
+}
+.entry-thumbnail a:hover:before, 
+.entry-thumbnail a:focus:before, 
+.entry-thumbnail a:active:before {
+	opacity: 0.75;
+}
+
+/* Make sure embeds and iframes fit their containers */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+12.1 Captions
+--------------------------------------------------------------*/
+@import "captions";
+
+/*--------------------------------------------------------------
+12.2 Galleries
+--------------------------------------------------------------*/
+@import "galleries";
+
+
+/*--------------------------------------------------------------
+13.1 Media Querries
+--------------------------------------------------------------*/
+
+/* Add alignment for wider devices */
+@media screen and (max-width: 480px) {
+	
+}
+
+
+/* Add alignment for wider devices */
+@media screen and (max-width: 768px){
+	.content-area {
+		padding: 40px 0 0 0;
+	}
+	.flyout-menu {
+		right: -100%;
+	}
+	.menu-open .flyout-menu {
+		width: 100%;
+	}
+	.header-top {
+		height: auto;
+		padding-bottom: 10px;
+	}
+	.header-bottom {
+		height: auto;
+		padding: 8px 0;
+		border-top: 0;
+	}
+	.site-title{
+		&:before {
+		height: 35px;
+		}
+		.avatar {
+			display: table;
+			margin: 0 auto;
+			top: 0;
+		}
+		a {
+			display: inherit;
+			text-align: center;
+		}
+	}
+	.site-description {
+		padding: 0;
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+@media screen and (min-width: 769px) and (max-width: 1060px){
+	.content-area {
+		padding: 40px 0 0 0;
+	}
+}
+@media screen and (min-width: 1061px) {
+	.content-area {
+		padding: 40px 75px;
+	}
+}

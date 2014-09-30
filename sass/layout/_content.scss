@@ -1,0 +1,24 @@
+.site-content {
+	background-color: #F5F1D9;
+}
+.content-area {
+	width: $site-width;
+	margin: 0 auto;
+}
+.entry-title {
+	font-size: 3.1rem;
+	a {
+		text-decoration: none;
+		font-weight:700;
+	}
+}
+.site-main a {
+	color: #5D9CA1;
+}
+.site-info {
+	width: $site-width;
+	margin: 0 auto;
+}
+.site-footer {
+	background-color: #5D9CA1;
+}
