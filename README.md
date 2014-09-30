@@ -6,4 +6,6 @@ Hi. I'm Aurora - a theme for bloggers!
 - Mobile First
 - Flyout Sidebar & Menu
 
-https://cloudup.com/cFINm_wfZ6L
+![Screenshot](https://i.cloudup.com/5Mnr6dQJ2c.png "Screenshot")
+
+
