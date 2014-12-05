@@ -297,11 +297,28 @@ td {
   padding: 0.5em;
   border: 0.5px solid grey; }
 
-table thead tr {
+#content table thead tr {
+  background: #CDCAB7; }
+#content tr:nth-child(even) {
   background: #CDCAB7; }
 
-tr:nth-child(even) {
-  background: #CDCAB7; }
+/* Calendar Widget */
+#calendar_wrap {
+  background: #F5F1D9;
+  color: #000;
+  padding: 10px 20px; }
+
+a {
+  text-decoration: none; }
+
+.entry-content a,
+.entry-summary a,
+.page-content a,
+.comment-content a {
+  border-bottom: 1px solid #5D9CA1; }
+
+a img {
+  vertical-align: middle; }
 
 /*--------------------------------------------------------------
 4.0 Forms
@@ -405,9 +422,14 @@ textarea:focus {
 input[type="text"],
 input[type="email"],
 input[type="url"],
-input[type="password"],
-input[type="search"] {
+input[type="password"] {
   padding: 3px; }
+
+input[type="search"] {
+  padding: 15px; }
+  input[type="search"] .flyout-menu {
+    width: 100%;
+    box-sizing: border-box; }
 
 textarea {
   overflow: auto;
@@ -424,11 +446,11 @@ textarea {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue; }
+  color: #5D9CA1; }
   a:visited {
-    color: purple; }
+    color: #5D9CA1; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #B32938; }
 
 /*--------------------------------------------------------------
 5.2 Menus
@@ -2203,7 +2225,7 @@ X.X Header
 .header-top {
   position: relative;
   background-color: #B32938;
-  height: 300px; }
+  height: 200px; }
 
 .header-bottom {
   background-color: #5D9CA1;
@@ -2235,7 +2257,7 @@ X.X Header
   .site-title:before {
     content: '';
     display: block;
-    height: 130px; }
+    height: 30px; }
   .site-title a {
     text-decoration: none;
     color: white; }
@@ -2263,12 +2285,17 @@ X.X Header
   height: 100%; }
   .flyout-menu > aside:last-child {
     margin-bottom: 7em; }
+  .flyout-menu h1 {
+    font-size: 1.5em;
+    text-transform: uppercase; }
 
 /*--------------------------------------------------------------
 9.0 Widgets
 --------------------------------------------------------------*/
 .widget {
   margin: 0 0 1.5em;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid #F5F1D9;
   /* Make sure select elements fit in widgets */ }
   .widget select {
     max-width: 100%; }
@@ -2286,15 +2313,23 @@ X.X Header
 .sticky {
   display: block; }
 
+.entry-content {
+  display: inline-block;
+  width: 70%;
+  min-height: 100px; }
+
 .hentry {
-  margin: 0 0 1.5em; }
+  margin: 0 0 2.5em;
+  padding-bottom: 2.5em;
+  border-bottom: 4px solid #5D9CA1; }
 
 .entry-meta {
-  margin: 0 0 1.2em;
+  margin: 0;
   color: #5D9CA1; }
   .entry-meta span a {
     text-decoration: none;
-    color: #5D9CA1; }
+    color: #5D9CA1;
+    text-transform: uppercase; }
 
 .byline,
 .updated:not(.published) {
@@ -2312,6 +2347,21 @@ X.X Header
 .page-links {
   clear: both;
   margin: 0 0 1.5em; }
+
+.entry-footer {
+  float: right;
+  display: block;
+  width: 20%;
+  margin: 1.5em 0 0; }
+  .entry-footer span {
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em; }
+  .entry-footer i {
+    color: #5D9CA1;
+    margin-right: 5px; }
 
 /*--------------------------------------------------------------
 10.2 Asides

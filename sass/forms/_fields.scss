@@ -43,9 +43,15 @@ textarea:focus {
 input[type="text"],
 input[type="email"],
 input[type="url"],
-input[type="password"],
-input[type="search"] {
+input[type="password"] {
 	padding: 3px;
+}
+input[type="search"] {
+	padding: 15px;
+	& .flyout-menu {
+		width: 100%;
+		box-sizing: border-box;
+	}
 }
 
 textarea {

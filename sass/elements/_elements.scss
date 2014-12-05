@@ -17,3 +17,16 @@ figure {
 }
 
 @import "tables";
+
+a {
+	text-decoration: none;
+}
+.entry-content a, 
+.entry-summary a, 
+.page-content a, 
+.comment-content a {
+	border-bottom: 1px solid #5D9CA1;
+}
+a img {
+	vertical-align: middle;
+}

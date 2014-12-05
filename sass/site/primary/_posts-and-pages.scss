@@ -1,16 +1,23 @@
 .sticky {
 	display: block;
 }
-
+.entry-content {
+	display: inline-block;
+	width: 70%;
+	min-height: 100px;
+}
 .hentry {
-	margin: 0 0 1.5em;
+	margin: 0 0 2.5em;
+	padding-bottom: 2.5em;
+	border-bottom: 4px solid #5D9CA1;
 }
 .entry-meta {
-	margin: 0 0 1.2em;
+	margin: 0;
 	color: #5D9CA1;
 	span a {
 		text-decoration: none;
 		color: #5D9CA1;
+		text-transform: uppercase;
 	}
 }
 .byline,
@@ -32,4 +39,21 @@
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+.entry-footer {
+	float: right;
+	display: block;
+	width: 20%;
+	margin: 1.5em 0 0;
+	span {
+		display: inline-block;
+	    text-transform: uppercase;
+	    border-bottom: 1px solid #ccc;
+    	margin-bottom: 0.5em;
+    	padding-bottom: 0.5em;
+	}
+	i {
+		color: #5D9CA1;
+		margin-right: 5px;
+	}
 }

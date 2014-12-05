@@ -44,7 +44,7 @@
 .header-top {
 	position: relative;
 	background-color: #B32938;
-	height: 300px;
+	height: 200px;
 }
 .header-bottom {
 	background-color: #5D9CA1;
@@ -74,7 +74,7 @@
 	&:before {
 		content: '';
 		display: block;
-		height: 130px;
+		height: 30px;
 	}
 	font-size: 52px;
 	font-size: 5.2rem;
@@ -112,5 +112,9 @@
 	height: 100%;
 	> aside:last-child {
 		margin-bottom: 7em;
+	}
+	h1 {
+		font-size: 1.5em;
+		text-transform: uppercase;
 	}
 }
