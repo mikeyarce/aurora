@@ -80,7 +80,8 @@
 	font-size: 5.2rem;
 	a {
 		text-decoration: none;
-		color: white;
+		color: #fff;
+		text-shadow: 2px 2px #5D9CA1;
 	}
 }
 
@@ -116,5 +117,14 @@
 	h1 {
 		font-size: 1.5em;
 		text-transform: uppercase;
+	}
+	aside {
+		ul {
+			list-style: none;
+			margin: 0;
+		}
+		li {
+			margin: 0 0 5px 0;
+		}
 	}
 }

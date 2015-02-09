@@ -5,11 +5,13 @@
 	display: inline-block;
 	width: 70%;
 	min-height: 100px;
+	float: left;
 }
 .hentry {
 	margin: 0 0 2.5em;
 	padding-bottom: 2.5em;
 	border-bottom: 4px solid #5D9CA1;
+	overflow: hidden;
 }
 .entry-meta {
 	margin: 0;

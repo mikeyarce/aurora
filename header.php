@@ -30,19 +30,19 @@
 		<div class="wrap">
 			<?php do_action( 'before' ); ?>
 
-			<?php $header_image = get_header_image();
+<!-- 			<?php $header_image = get_header_image();
 			if ( ! empty( $header_image ) ) { ?>
 				<a class="site-logo"  href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 					<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" class="no-grav header-image" />
 				</a>
-			<?php } // if ( ! empty( $header_image ) ) ?>
+			<?php } // if ( ! empty( $header_image ) ) ?> -->
 
 			<?php if ( is_active_sidebar( 'flyout-menu' ) ) { ?>
 			<a id="sidebar-toggle" class="sidebar-toggle" title="Sidebar" class=""><i class="fa fa-plus"></i></span><span class="screen-reader-text">Sidebar</span></a>
 			<?php } else { ?>
 			<?php };?>
 			<div class="site-branding">
-				<div class="header-top">					
+				<div class="header-top" style="background-image: url(<?php header_image(); ?>);">					
 					<h1 class="site-title">
 						<?php echo get_avatar( get_bloginfo ( 'admin_email'), '150' ); ?>
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>

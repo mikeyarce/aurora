@@ -33,7 +33,16 @@
 .entry-thumbnail a:active:before {
 	opacity: 0.75;
 }
-
+.entry-thumbnail a, 
+.entry-thumbnail img {
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 100%;
+    transition: all 250ms ease 0s;
+}
+.entry-thumbnail a {
+	position: relative;
+}
 /* Make sure embeds and iframes fit their containers */
 embed,
 iframe,

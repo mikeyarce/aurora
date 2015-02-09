@@ -1,14 +1,14 @@
 /*
 Theme Name: Aurora
-Theme URI: http://underscores.me/
-Author: Automattic
-Author URI: http://automattic.com/
+Theme URI: http://mikeyarce.com/themes/
+Author: Mikey Arce
+Author URI: http://mikeyarce.com/
 Description: Hi. I'm a starter theme called <code>Aurora</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 Version: 1.0-wpcom
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: Aurora
-Tags:
+Tags: translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -222,7 +222,7 @@ abbr, acronym {
   cursor: help; }
 
 mark, ins {
-  background: #F7ACB4;
+  background: #88DEE6;
   text-decoration: none; }
 
 sup,
@@ -291,22 +291,27 @@ table {
 th {
   font-weight: bold;
   padding: 0.5em;
-  border: 0.5px solid grey; }
+  border: 0px solid grey; }
 
 td {
   padding: 0.5em;
-  border: 0.5px solid grey; }
+  border: 0px solid grey; }
 
 #content table thead tr {
-  background: #CDCAB7; }
+  background: #5D9CA1;
+  color: white; }
 #content tr:nth-child(even) {
   background: #CDCAB7; }
 
 /* Calendar Widget */
 #calendar_wrap {
-  background: #F5F1D9;
-  color: #000;
-  padding: 10px 20px; }
+  background: none;
+  color: #fff;
+  margin: 20px 0 0 10px; }
+
+#wp-calendar td#today {
+  background: none repeat scroll 0 0 #ccc;
+  color: black; }
 
 a {
   text-decoration: none; }
@@ -2260,7 +2265,8 @@ X.X Header
     height: 30px; }
   .site-title a {
     text-decoration: none;
-    color: white; }
+    color: #fff;
+    text-shadow: 2px 2px #5D9CA1; }
 
 .menu-open .flyout-menu {
   visibility: visible;
@@ -2288,6 +2294,11 @@ X.X Header
   .flyout-menu h1 {
     font-size: 1.5em;
     text-transform: uppercase; }
+  .flyout-menu aside ul {
+    list-style: none;
+    margin: 0; }
+  .flyout-menu aside li {
+    margin: 0 0 5px 0; }
 
 /*--------------------------------------------------------------
 9.0 Widgets
@@ -2316,12 +2327,14 @@ X.X Header
 .entry-content {
   display: inline-block;
   width: 70%;
-  min-height: 100px; }
+  min-height: 100px;
+  float: left; }
 
 .hentry {
   margin: 0 0 2.5em;
   padding-bottom: 2.5em;
-  border-bottom: 4px solid #5D9CA1; }
+  border-bottom: 4px solid #5D9CA1;
+  overflow: hidden; }
 
 .entry-meta {
   margin: 0;
@@ -2402,6 +2415,11 @@ X.X Header
 .site-footer {
   background-color: #5D9CA1; }
 
+.site-info {
+  padding: 10px 0; }
+  .site-info a {
+    color: #fff; }
+
 /*--------------------------------------------------------------
 11.0 Infinite scroll
 --------------------------------------------------------------*/
@@ -2451,6 +2469,16 @@ X.X Header
 .entry-thumbnail a:focus:before,
 .entry-thumbnail a:active:before {
   opacity: 0.75; }
+
+.entry-thumbnail a,
+.entry-thumbnail img {
+  display: inline-block;
+  margin: 0 auto;
+  max-width: 100%;
+  transition: all 250ms ease 0s; }
+
+.entry-thumbnail a {
+  position: relative; }
 
 /* Make sure embeds and iframes fit their containers */
 embed,
