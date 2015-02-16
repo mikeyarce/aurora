@@ -22,6 +22,7 @@
 		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<?php endif; ?>
+		<div class="posted-on"><?php aurora_posted_on(); ?></div>
 
 	</header><!-- .entry-header -->
 
@@ -34,35 +35,4 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
-			<?php
-				/* translators: used between list items, there is a space after the comma */
-				$categories_list = get_the_category_list( __( ', ', 'aurora' ) );
-				if ( $categories_list && aurora_categorized_blog() ) :
-			?>
-			<span class="cat-links">
-				<?php printf( __( '<i class="fa fa-copy"></i> %1$s', 'aurora' ), $categories_list ); ?>
-			</span>
-			<?php endif; // End if categories ?>
-
-			<?php
-				/* translators: used between list items, there is a space after the comma */
-				$tags_list = get_the_tag_list( '', __( ', ', 'aurora' ) );
-				if ( $tags_list ) :
-			?><br />
-			<span class="tags-links">
-				<?php printf( __( '<i class="fa fa-tags"></i> %1$s', 'aurora' ), $tags_list ); ?>
-			</span>
-			<?php endif; // End if $tags_list ?>
-		<?php endif; // End if 'post' == get_post_type() ?>
-<br />
-		<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-		<span class="comments-link"><i class="fa fa-comments"></i>
-<?php comments_popup_link( __( 'Leave a comment', 'aurora' ), __( '1 Comment', 'aurora' ), __( '% Comments', 'aurora' ) ); ?></span>
-		<?php endif; ?>
-<br />
-		<?php edit_post_link( __( 'Edit', 'aurora' ), '<span class="edit-link">', '</span>' ); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
