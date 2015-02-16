@@ -29,14 +29,6 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="wrap">
 			<?php do_action( 'before' ); ?>
-
-<!-- 			<?php $header_image = get_header_image();
-			if ( ! empty( $header_image ) ) { ?>
-				<a class="site-logo"  href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-					<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" class="no-grav header-image" />
-				</a>
-			<?php } // if ( ! empty( $header_image ) ) ?> -->
-
 			<?php if ( is_active_sidebar( 'flyout-menu' ) ) { ?>
 			<a id="sidebar-toggle" class="sidebar-toggle" title="Sidebar" class=""><i class="fa fa-plus"></i></span><span class="screen-reader-text">Sidebar</span></a>
 			<?php } else { ?>
@@ -55,10 +47,11 @@
 		</div><!-- .wrap -->
 
 
-		<!-- <nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle"><?php _e( 'Primary Menu', 'aurora' ); ?></button>
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle"><?php _e( '<i class="fa fa-bars"></i>
+ Menu', 'aurora' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav> --><!-- #site-navigation -->
+		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

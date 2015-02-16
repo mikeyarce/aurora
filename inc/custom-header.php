@@ -14,8 +14,8 @@ function aurora_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'aurora_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
-		'width'                  => 1440,
-		'height'                 => 200,
+		'width'                  => 2000,
+		'height'                 => 310,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'aurora_header_style',
 		'admin-head-callback'    => 'aurora_admin_header_style',

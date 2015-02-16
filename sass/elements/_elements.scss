@@ -20,6 +20,11 @@ figure {
 
 a {
 	text-decoration: none;
+	color: $color_main_1;
+	&:hover {
+		background: $color_main_1;
+		color: #fff;
+	}
 }
 .entry-content a, 
 .entry-summary a, 

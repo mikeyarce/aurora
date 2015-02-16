@@ -44,16 +44,19 @@
 .header-top {
 	position: relative;
 	background-color: #B32938;
-	height: 200px;
+	height: 310px;
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 .header-bottom {
 	background-color: #5D9CA1;
 	height: 90px;
-	border-top: 5px solid #F5F1D9;
+	border-top: 5px solid $color_main_2;
 }
 .site-title,
 .site-description {
 	width: $site-width;
+	max-width: $max-width;
 	margin: 0 auto;
 }
 .site-description{
@@ -67,14 +70,14 @@
 	top: 70px;
 	position: relative;
 	border-radius: 100px;
-	border: 5px solid #F5F1D9;
+	border: 5px solid $color_main_2;
 	margin-right: 15px;
 }
 .site-title {
 	&:before {
 		content: '';
 		display: block;
-		height: 30px;
+		height: 150px;
 	}
 	font-size: 52px;
 	font-size: 5.2rem;
@@ -128,3 +131,4 @@
 		}
 	}
 }
+

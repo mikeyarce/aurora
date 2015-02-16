@@ -79,7 +79,7 @@ function aurora_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		_x( '<i class="fa fa-clock-o"></i>  %s', 'post date', 'aurora' ),
+		_x( '%s', 'post date', 'aurora' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 

@@ -5,11 +5,14 @@ $color__background-button: #e6e6e6;
 $color__background-pre: #333;
 $color__background-ins: #88DEE6;
 
+$color_main_1: #5D9CA1;
+$color_main_2: #F5F1D9;
+
 $color__text-screen: #21759b;
 $color__text-input: #666;
 $color__text-input-focus: #111;
-$color__link: #5D9CA1;
-$color__link-visited: #5D9CA1;
+$color__link: $color_main_1;
+$color__link-visited: $color_main_1;
 $color__link-hover: #B32938;
 $color__text-main: #404040;
 

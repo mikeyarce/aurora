@@ -1,16 +1,19 @@
+#main {
+	max-width: $max-main-width;
+	margin: 0 auto;
+}
 .sticky {
 	display: block;
+	background: darken($color_main_2, 10);
+	padding: 0 20px;
 }
 .entry-content {
-	display: inline-block;
-	width: 70%;
 	min-height: 100px;
-	float: left;
 }
 .hentry {
 	margin: 0 0 2.5em;
 	padding-bottom: 2.5em;
-	border-bottom: 4px solid #5D9CA1;
+	border-bottom: 1px solid #5D9CA1;
 	overflow: hidden;
 }
 .entry-meta {
@@ -31,7 +34,16 @@
 .group-blog .byline {
 	display: inline;
 }
-
+.posted-on {
+	margin: 20px 0 0 0;
+	span {
+		color: #B32938;
+		a {
+			color: #B32938;
+			border-bottom: 1px solid #B32938;
+		}
+	}
+}
 .page-content,
 .entry-content,
 .entry-summary {
@@ -43,9 +55,7 @@
 	margin: 0 0 1.5em;
 }
 .entry-footer {
-	float: right;
 	display: block;
-	width: 20%;
 	margin: 1.5em 0 0;
 	span {
 		display: inline-block;

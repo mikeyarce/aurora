@@ -146,7 +146,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto Slab', serif; }
 
 h1.entry-title {
-  font-size: 3.5em; }
+  font-size: 3.5em;
+  line-height: 1.2em; }
   @media screen and (max-width: 480px) {
     h1.entry-title {
       font-size: 2em; } }
@@ -314,7 +315,11 @@ td {
   color: black; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #5D9CA1; }
+  a:hover {
+    background: #5D9CA1;
+    color: #fff; }
 
 .entry-content a,
 .entry-summary a,
@@ -455,7 +460,7 @@ a {
   a:visited {
     color: #5D9CA1; }
   a:hover, a:focus, a:active {
-    color: #B32938; }
+    color: #fff; }
 
 /*--------------------------------------------------------------
 5.2 Menus
@@ -463,8 +468,9 @@ a {
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
-  width: 100%; }
+  width: 75%;
+  max-width: 1200px;
+  margin: 0 auto; }
   .main-navigation ul {
     list-style: none;
     margin: 0;
@@ -473,9 +479,10 @@ a {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
       position: absolute;
-      top: 1.5em;
+      top: 3.5em;
       left: -999em;
-      z-index: 99999; }
+      z-index: 99999;
+      background: white; }
       .main-navigation ul ul ul {
         left: -999em;
         top: 0; }
@@ -487,7 +494,8 @@ a {
       left: auto; }
   .main-navigation li {
     float: left;
-    position: relative; }
+    position: relative;
+    padding: 20px; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
@@ -499,10 +507,29 @@ a {
 @media screen and (max-width: 600px) {
   .menu-toggle,
   .main-navigation.toggled .nav-menu {
-    display: block; }
+    display: block;
+    margin: 15px auto;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    color: #818082; }
+    .menu-toggle:hover,
+    .main-navigation.toggled .nav-menu:hover {
+      color: #5D9CA1; }
+
+  .main-navigation button {
+    background: none repeat scroll 0 0 white; }
 
   .main-navigation ul {
-    display: none; } }
+    display: none; }
+
+  .site-header {
+    background: #5D9CA1; }
+
+  .menu-all-pages-container li {
+    float: none;
+    border-bottom: 1px solid white; }
+    .menu-all-pages-container li a {
+      color: white; } }
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
@@ -2230,7 +2257,9 @@ X.X Header
 .header-top {
   position: relative;
   background-color: #B32938;
-  height: 200px; }
+  height: 310px;
+  background-position: center center;
+  background-repeat: no-repeat; }
 
 .header-bottom {
   background-color: #5D9CA1;
@@ -2240,6 +2269,7 @@ X.X Header
 .site-title,
 .site-description {
   width: 75%;
+  max-width: 1200px;
   margin: 0 auto; }
 
 .site-description {
@@ -2262,7 +2292,7 @@ X.X Header
   .site-title:before {
     content: '';
     display: block;
-    height: 30px; }
+    height: 150px; }
   .site-title a {
     text-decoration: none;
     color: #fff;
@@ -2321,19 +2351,22 @@ X.X Header
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
+#main {
+  max-width: 900px;
+  margin: 0 auto; }
+
 .sticky {
-  display: block; }
+  display: block;
+  background: #eae2b1;
+  padding: 0 20px; }
 
 .entry-content {
-  display: inline-block;
-  width: 70%;
-  min-height: 100px;
-  float: left; }
+  min-height: 100px; }
 
 .hentry {
   margin: 0 0 2.5em;
   padding-bottom: 2.5em;
-  border-bottom: 4px solid #5D9CA1;
+  border-bottom: 1px solid #5D9CA1;
   overflow: hidden; }
 
 .entry-meta {
@@ -2352,6 +2385,14 @@ X.X Header
 .group-blog .byline {
   display: inline; }
 
+.posted-on {
+  margin: 20px 0 0 0; }
+  .posted-on span {
+    color: #B32938; }
+    .posted-on span a {
+      color: #B32938;
+      border-bottom: 1px solid #B32938; }
+
 .page-content,
 .entry-content,
 .entry-summary {
@@ -2362,9 +2403,7 @@ X.X Header
   margin: 0 0 1.5em; }
 
 .entry-footer {
-  float: right;
   display: block;
-  width: 20%;
   margin: 1.5em 0 0; }
   .entry-footer span {
     display: inline-block;
@@ -2404,9 +2443,6 @@ X.X Header
   .entry-title a {
     text-decoration: none;
     font-weight: 700; }
-
-.site-main a {
-  color: #5D9CA1; }
 
 .site-info {
   width: 75%;
