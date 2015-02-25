@@ -317,9 +317,10 @@ td {
 a {
   text-decoration: none;
   color: #5D9CA1; }
-  a:hover {
-    background: #5D9CA1;
-    color: #fff; }
+
+.hentry a:hover {
+  background: #5D9CA1;
+  color: #fff; }
 
 .entry-content a,
 .entry-summary a,
@@ -460,7 +461,7 @@ a {
   a:visited {
     color: #5D9CA1; }
   a:hover, a:focus, a:active {
-    color: #fff; }
+    color: #5D9CA1; }
 
 /*--------------------------------------------------------------
 5.2 Menus
@@ -496,6 +497,10 @@ a {
     float: left;
     position: relative;
     padding: 20px; }
+    .main-navigation li:hover {
+      background: #5D9CA1; }
+      .main-navigation li:hover > a {
+        color: #fff; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
@@ -515,6 +520,36 @@ a {
     .menu-toggle:hover,
     .main-navigation.toggled .nav-menu:hover {
       color: #5D9CA1; }
+    .menu-toggle li,
+    .main-navigation.toggled .nav-menu li {
+      float: none;
+      border-bottom: 1px solid white;
+      padding: 15px; }
+      .menu-toggle li ul,
+      .main-navigation.toggled .nav-menu li ul {
+        display: block;
+        float: none;
+        position: relative;
+        left: 0;
+        box-shadow: 0px 0px 0px;
+        background: none;
+        top: 0; }
+        .menu-toggle li ul a,
+        .main-navigation.toggled .nav-menu li ul a {
+          color: #eee; }
+        .menu-toggle li ul li,
+        .main-navigation.toggled .nav-menu li ul li {
+          padding-left: 0;
+          margin-left: 15px; }
+          .menu-toggle li ul li:last-child,
+          .main-navigation.toggled .nav-menu li ul li:last-child {
+            border-bottom: none; }
+      .menu-toggle li ul.show-children,
+      .main-navigation.toggled .nav-menu li ul.show-children {
+        display: block; }
+    .menu-toggle a,
+    .main-navigation.toggled .nav-menu a {
+      color: #fff; }
 
   .main-navigation button {
     background: none repeat scroll 0 0 white; }
