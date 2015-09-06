@@ -128,7 +128,15 @@
 		}
 		li {
 			margin: 0 0 5px 0;
+			color: #b32938;
+		}
+		.sub-menu,
+		.children {
+			li {
+    		color: #b32938;
+    		list-style: inside none disc;
+    		padding-left: 20px;
+			}
 		}
 	}
 }
-
