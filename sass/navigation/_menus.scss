@@ -25,15 +25,14 @@
 			}
 
 			li {
+				width: 200px;
+				@media screen and (max-width: 600px){
+					width: auto;
+				}
 				&:hover > ul {
 					left: 100%;
 				}
 			}
-
-			a {
-				width: 200px;
-			}
-
 			:hover > a {
 			}
 
@@ -48,8 +47,9 @@
 	li {
 		float: left;
 		position: relative;
-		padding: 20px;
-
+		a {
+			padding: 20px;
+		}
 		&:hover {
 			background: $color_main_1;
 			> a {
@@ -71,8 +71,26 @@
 .menu-toggle {
 	display: none;
 }
+.mobile-menu-toggle {
+	/* This is for the mobile menu arrow */
+	float: right;
+	margin-top: 12px;
+	&.open {
+		background: #ccc;
+		color: #000;
+	}
+}
+.nav-menu button.mobile-menu-toggle {
+	display: none;
+}
+.main-navigation.toggled .nav-menu li.show-children > ul {
+	display: block;
+}
 
 @media screen and (max-width: 600px) {
+	.nav-menu button.mobile-menu-toggle {
+		display: block;
+	}
 	.menu-toggle,
 	.main-navigation.toggled .nav-menu {
 		display: block;
@@ -85,10 +103,10 @@
 		}
 		li {
 			float: none;
-			border-bottom: 1px solid white;
-			padding: 15px;
+			a {
+				border-bottom: 1px solid white;
+			}
 			ul{
-				display: block;
 				float: none;
 				position: relative;
 				left: 0;
@@ -126,7 +144,6 @@
 	.menu-all-pages-container {
 		li {
 			float: none;
-			border-bottom: 1px solid white;
 			a {
 				color: white;
 			}
