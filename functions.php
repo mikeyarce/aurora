@@ -109,6 +109,16 @@ function aurora_scripts() {
 add_action( 'wp_enqueue_scripts', 'aurora_scripts' );
 
 /**
+	* Excerpt Read More link
+	*
+**/
+
+function aurora_continue_reading($output) {
+    return $output . '<p><a href="'. get_permalink() . '">' . 'Continue reading <span class="meta-nav">&rarr;</span>' . '</a></p>';
+}
+add_filter('get_the_excerpt', 'aurora_continue_reading');
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
