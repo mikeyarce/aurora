@@ -51,7 +51,7 @@
 			padding: 20px;
 		}
 		&:hover {
-			background: $color_main_1;
+			background: $color_secondary;
 			> a {
 				color: #fff;
 			}
@@ -60,6 +60,7 @@
 	a {
 		display: block;
 		text-decoration: none;
+		color: darken($color-secondary, 30%);
 	}
 
 	.current_page_item a,
@@ -99,12 +100,12 @@
 		padding: 10px 15px;
 		color: #818082;
 		&:hover {
-			color: $color_main_1;
+			color: $color_secondary;
 		}
 		li {
 			float: none;
 			a {
-				border-bottom: 1px solid white;
+				border-bottom: 1px solid darken($color-secondary, 30%);
 			}
 			ul{
 				float: none;
@@ -129,7 +130,10 @@
 				}
 		}
 		a {
-			color: #fff;
+			color: darken($color-secondary, 30%);
+			&:hover {
+				color: $color-background;
+			}
 		}
 	}
 	.main-navigation button {
@@ -139,13 +143,13 @@
 		display: none;
 	}
 	.site-header {
-		background: $color_main_1;
+		background: $color_secondary;
 	}
 	.menu-all-pages-container {
 		li {
 			float: none;
 			a {
-				color: white;
+				color: darken($color-secondary, 30%);
 			}
 		}
 	}

@@ -1,3 +1,9 @@
+$color-main: #B32938;
+$color-secondary: #5D9CA1;
+$color-third: #F5F1D9;
+$color-background: #FFFFFF;
+$color-fourth: #BED7D9;
+
 $color__background-body: #fff;
 $color__background-screen: #f1f1f1;
 $color__background-hr: #ccc;
@@ -5,14 +11,11 @@ $color__background-button: #e6e6e6;
 $color__background-pre: #333;
 $color__background-ins: #88DEE6;
 
-$color_main_1: #5D9CA1;
-$color_main_2: #F5F1D9;
-
 $color__text-screen: #21759b;
 $color__text-input: #666;
 $color__text-input-focus: #111;
-$color__link: $color_main_1;
-$color__link-visited: $color_main_1;
+$color__link: $color_secondary;
+$color__link-visited: $color_secondary;
 $color__link-hover: #B32938;
 $color__text-main: #404040;
 

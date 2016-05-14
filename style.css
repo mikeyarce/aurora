@@ -524,7 +524,8 @@ a {
         color: #fff; }
   .main-navigation a {
     display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    color: #253e40; }
 
 /* Small menu */
 .menu-toggle {
@@ -563,7 +564,7 @@ a {
       float: none; }
       .menu-toggle li a,
       .main-navigation.toggled .nav-menu li a {
-        border-bottom: 1px solid white; }
+        border-bottom: 1px solid #253e40; }
       .menu-toggle li ul,
       .main-navigation.toggled .nav-menu li ul {
         float: none;
@@ -587,7 +588,10 @@ a {
         display: block; }
     .menu-toggle a,
     .main-navigation.toggled .nav-menu a {
-      color: #fff; }
+      color: #253e40; }
+      .menu-toggle a:hover,
+      .main-navigation.toggled .nav-menu a:hover {
+        color: #FFFFFF; }
 
   .main-navigation button {
     background: none repeat scroll 0 0 white; }
@@ -601,7 +605,7 @@ a {
   .menu-all-pages-container li {
     float: none; }
     .menu-all-pages-container li a {
-      color: white; } }
+      color: #253e40; } }
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
@@ -2296,7 +2300,7 @@ X.X Header
   right: 0;
   height: 40px;
   width: 140px;
-  color: #fff;
+  color: #FFFFFF;
   line-height: 140px;
   text-align: center;
   text-decoration: none; }
@@ -2333,6 +2337,9 @@ X.X Header
   background-position: center center;
   background-repeat: no-repeat; }
 
+#masthead {
+  background-color: #BED7D9; }
+
 .header-bottom {
   background-color: #5D9CA1;
   height: 90px;
@@ -2346,7 +2353,7 @@ X.X Header
 
 .site-description {
   padding-left: 180px;
-  color: #fff;
+  color: #FFFFFF;
   margin-top: 5px;
   font-weight: 300;
   font-size: 1.8rem; }
@@ -2367,7 +2374,7 @@ X.X Header
     height: 150px; }
   .site-title a {
     text-decoration: none;
-    color: #fff;
+    color: #FFFFFF;
     text-shadow: 2px 2px #5D9CA1; }
 
 .menu-open .flyout-menu {
@@ -2382,7 +2389,7 @@ X.X Header
 
 .flyout-menu {
   background: rgba(38, 41, 44, 0.95);
-  color: white;
+  color: #FFFFFF;
   float: right;
   width: 50%;
   right: -50%;
@@ -2401,10 +2408,10 @@ X.X Header
     margin: 0; }
   .flyout-menu aside li {
     margin: 0 0 5px 0;
-    color: #b32938; }
+    color: #B32938; }
   .flyout-menu aside .sub-menu li,
   .flyout-menu aside .children li {
-    color: #b32938;
+    color: #B32938;
     list-style: inside none disc;
     padding-left: 20px; }
 
@@ -2434,16 +2441,14 @@ X.X Header
   margin: 0 auto; }
 
 .sticky {
-  display: block;
-  background: #eae2b1;
-  padding: 0 20px; }
+  display: block; }
 
 .entry-content {
   min-height: 100px; }
 
 .hentry {
   margin: 0 0 2.5em;
-  padding-bottom: 2.5em;
+  padding: 0 1em 2.5em 1em;
   border-bottom: 1px solid #5D9CA1;
   overflow: hidden; }
 
@@ -2516,7 +2521,7 @@ X.X Header
   display: block; }
 
 .site-content {
-  background-color: #F5F1D9; }
+  background-color: #FFFFFF; }
 
 .content-area {
   width: 75%;
@@ -2538,7 +2543,7 @@ X.X Header
 .site-info {
   padding: 10px 0; }
   .site-info a {
-    color: #fff; }
+    color: #FFFFFF; }
 
 /*--------------------------------------------------------------
 11.0 Infinite scroll
@@ -2570,7 +2575,9 @@ X.X Header
   margin-bottom: 40px;
   position: relative;
   text-align: center;
-  z-index: 1; }
+  z-index: 1;
+  margin-right: -16px;
+  margin-left: -16px; }
 
 .entry-thumbnail a:before {
   background: none repeat scroll 0 0 padding-box content-box #B32938;
@@ -2703,4 +2710,4 @@ object {
     padding: 40px 0 0 0; } }
 @media screen and (min-width: 1061px) {
   .content-area {
-    padding: 40px 75px; } }
+    padding: 40px 0; } }

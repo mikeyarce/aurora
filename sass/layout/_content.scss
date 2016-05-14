@@ -1,5 +1,5 @@
 .site-content {
-	background-color: #F5F1D9;
+	background-color: $color-background;
 }
 .content-area {
 	width: $site-width;
@@ -17,11 +17,11 @@
 	margin: 0 auto;
 }
 .site-footer {
-	background-color: #5D9CA1;
+	background-color: $color-secondary;
 }
 .site-info {
 	a {
-		color: #fff;
+		color: $color-background;
 	}
 	padding: 10px 0;
 }

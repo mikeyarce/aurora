@@ -11,7 +11,7 @@
 	right: 0;
 	height: 40px;
 	width: 140px;
-	color: #fff;
+	color: $color-background;
 	line-height: 140px;
 	text-align: center;
 	text-decoration: none;
@@ -30,7 +30,7 @@
 	content: '';
 	display: block;
 	position: fixed;
-	border-top: 140px solid #5D9CA1;
+	border-top: 140px solid $color-secondary;
 	border-left: 140px solid transparent;
 	z-index: -1;
 	transition: 0.4s ease;
@@ -43,15 +43,18 @@
 }
 .header-top {
 	position: relative;
-	background-color: #B32938;
+	background-color: $color-main;
 	height: 310px;
 	background-position: center center;
 	background-repeat: no-repeat;
 }
+#masthead {
+	background-color: $color-fourth;
+}
 .header-bottom {
-	background-color: #5D9CA1;
+	background-color: $color-secondary;
 	height: 90px;
-	border-top: 5px solid $color_main_2;
+	border-top: 5px solid $color_third;
 }
 .site-title,
 .site-description {
@@ -61,7 +64,7 @@
 }
 .site-description{
 	padding-left: 180px;
-	color: #fff;
+	color: $color-background;
 	margin-top: 5px;
 	font-weight: 300;
 	font-size: 1.8rem;
@@ -70,7 +73,7 @@
 	top: 70px;
 	position: relative;
 	border-radius: 100px;
-	border: 5px solid $color_main_2;
+	border: 5px solid $color_third;
 	margin-right: 15px;
 }
 .site-title {
@@ -83,8 +86,8 @@
 	font-size: 5.2rem;
 	a {
 		text-decoration: none;
-		color: #fff;
-		text-shadow: 2px 2px #5D9CA1;
+		color: $color-background;
+		text-shadow: 2px 2px $color-secondary;
 	}
 }
 
@@ -99,13 +102,13 @@
 		transition: all 0.7s ease 0s;
 	}
 	#sidebar-toggle:before, #sidebar-toggle:after {
-		border-top: 140px solid #B32938;
+		border-top: 140px solid $color-main;
 	}
 }
 
 .flyout-menu {
 	background: hsla(210, 7%, 16%, 0.95);
-	color: white;
+	color: $color-background;
 	float: right;
 	width: 50%;
 	right: -50%;
@@ -128,12 +131,12 @@
 		}
 		li {
 			margin: 0 0 5px 0;
-			color: #b32938;
+			color: $color-main;
 		}
 		.sub-menu,
 		.children {
 			li {
-    		color: #b32938;
+    		color: $color-main;
     		list-style: inside none disc;
     		padding-left: 20px;
 			}

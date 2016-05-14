@@ -20,12 +20,12 @@ figure {
 
 a {
 	text-decoration: none;
-	color: $color_main_1;
+	color: $color_secondary;
 }
 .hentry {
 	a {
 		&:hover {
-			background: $color_main_1;
+			background: $color_secondary;
 			color: #fff;
 		}
 	}

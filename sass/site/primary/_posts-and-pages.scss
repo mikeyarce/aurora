@@ -4,15 +4,13 @@
 }
 .sticky {
 	display: block;
-	background: darken($color_main_2, 10);
-	padding: 0 20px;
 }
 .entry-content {
 	min-height: 100px;
 }
 .hentry {
 	margin: 0 0 2.5em;
-	padding-bottom: 2.5em;
+	padding: 0 1em 2.5em 1em;
 	border-bottom: 1px solid #5D9CA1;
 	overflow: hidden;
 }
@@ -79,4 +77,3 @@
 		margin-top: 40px;
 	}
 }
-
